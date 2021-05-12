@@ -18,16 +18,13 @@
         data() {
             return {
                 links: [
-                    {
-                        title: "Главная",
-                        href: "/"
-                    },
+                    
                     {
                         title: "Заметки",
-                        href: "/note"
+                        href: "/blog"
                     },
                     {
-                        title: "Создать Заметку",
+                        title: "Создать заметку",
                         href: "/create"
                     }
                 ]
@@ -37,5 +34,4 @@
 </script>
 
 <style scoped>
-
-</style>>
+</style>

@@ -4,7 +4,9 @@ import Vue from 'vue';
 Vue.use(vueRouter);
 
 import Index from "./views/Index";
-import Note from "./views/Note"
+import Blog from "./views/Blog";
+import Post from "./views/Post";
+import CreatePost from "./views/CreatePost";
 
 const routes = [
     {
@@ -12,12 +14,20 @@ const routes = [
         component: Index
     },
     {
-        path: "/note",
-        component: Note
+        path: "/blog",
+        component: Blog
     },
+    {
+        path: "/post/:id",
+        component: Post
+    },
+    {
+        path: "/create",
+        component: CreatePost
+    }
 ];
 
 export default new vueRouter({
     mode: "history",
-    routes: routes
+    routes
 });
