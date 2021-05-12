@@ -28,9 +28,9 @@ Vue.component('v-header', require('./components/Header.vue').default);
  */
 
 
-//style
-
+import router from "./router";
 
 const app = new Vue({
     el: '#app',
+    router
 });
