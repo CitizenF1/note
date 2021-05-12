@@ -5,7 +5,7 @@
             <ul class="uk-navbar-nav">
 <!--                class="uk-active"-->
                 <li v-for="link in links">
-                    <a :href="link.href">{{ link.title }}</a>
+                    <router-link :to="link.href">{{ link.title }}</router-link>
                 </li>
             </ul>
 
@@ -23,11 +23,11 @@
                         href: "/"
                     },
                     {
-                        title: "Блог",
-                        href: "/blog"
+                        title: "Заметки",
+                        href: "/note"
                     },
                     {
-                        title: "Создать пост",
+                        title: "Создать Заметку",
                         href: "/create"
                     }
                 ]

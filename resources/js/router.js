@@ -4,12 +4,17 @@ import Vue from 'vue';
 Vue.use(vueRouter);
 
 import Index from "./views/Index";
+import Note from "./views/Note"
 
 const routes = [
     {
         path: "/",
-        comment: Index
-    }
+        component: Index
+    },
+    {
+        path: "/note",
+        component: Note
+    },
 ];
 
 export default new vueRouter({

@@ -14,7 +14,11 @@
 
 <div id="app">
     <v-header></v-header>
-    <router-view></router-view>
+    <main style="">
+        <div class="uk-container">
+            <router-view></router-view>
+        </div>
+    </main>
 </div>
 
 <script src="{{ asset('assets/js/uikit.min.js') }}"></script>
