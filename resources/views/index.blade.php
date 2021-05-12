@@ -7,6 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    
+
+
+<div id="app">
+    <v-header></v-header>
+</div>
+
+<script src="./js/app.js"></script>
 </body>
 </html>
