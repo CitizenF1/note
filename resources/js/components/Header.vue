@@ -4,7 +4,10 @@
 
             <ul class="uk-navbar-nav">
 <!--                class="uk-active"-->
-                <li class="uk-active"> <a href="#">Active</a>
+                <ul class="uk-navbar-nav">
+<!--                class="uk-active"-->
+                <li v-for="link in links">
+                    <a :href="link.href">{{ link.title }}</a>
                 </li>
             </ul>
 
@@ -14,9 +17,24 @@
 
 <script>
     export default {
-
-        name: "Header"
-        
+        data() {
+            return {
+                links: [
+                    {
+                        title: "Главная",
+                        href: "/"
+                    },
+                    {
+                        title: "Блог",
+                        href: "/blog"
+                    },
+                    {
+                        title: "Создать пост",
+                        href: "/create"
+                    }
+                ]
+            }
+        }
     }
 </script>
 

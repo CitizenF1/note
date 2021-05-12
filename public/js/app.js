@@ -1859,8 +1859,24 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: "Header"
+  data: function data() {
+    return {
+      links: [{
+        title: "Главная",
+        href: "/"
+      }, {
+        title: "Блог",
+        href: "/blog"
+      }, {
+        title: "Создать пост",
+        href: "/create"
+      }]
+    };
+  }
 });
 
 /***/ }),
@@ -1895,6 +1911,7 @@ Vue.component('v-header', __webpack_require__(/*! ./components/Header.vue */ "./
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
+//style
 
 var app = new Vue({
   el: '#app'
@@ -37413,33 +37430,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "nav",
-      { staticClass: "uk-navbar-container", attrs: { "uk-navbar": "" } },
-      [
-        _c("div", { staticClass: "uk-navbar-center" }, [
-          _c("ul", { staticClass: "uk-navbar-nav" }, [
-            _c("li", { staticClass: "uk-active" }, [
-              _c("a", { attrs: { href: "#" } }, [_vm._v("Active")])
-            ])
-          ])
-        ])
-      ]
-    )
-  }
-]
-render._withStripped = true
+var render = function () {}
+var staticRenderFns = []
 
 
 
