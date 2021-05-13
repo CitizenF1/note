@@ -8,7 +8,7 @@
         </div>
         <div uk-alert v-if="not_found">
             <a class="uk-alert-close" uk-close></a>
-            <h3>404 пост не найден</h3>
+            <h3>404 не найден</h3>
         </div>
     </div>
 </template>
