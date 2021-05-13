@@ -38575,10 +38575,6 @@ var render = function() {
     _vm._v(" "),
     _c("form", { staticStyle: { "margin-bottom": "20px" } }, [
       _c("fieldset", { staticClass: "uk-fieldset" }, [
-        _c("legend", { staticClass: "uk-legend" }, [
-          _vm._v("Опубликовать пост")
-        ]),
-        _vm._v(" "),
         _c("div", { staticClass: "uk-margin" }, [
           _c("input", {
             directives: [
@@ -38614,7 +38610,7 @@ var render = function() {
               }
             ],
             staticClass: "uk-textarea",
-            attrs: { rows: "5", placeholder: "Содержимое" },
+            attrs: { rows: "5", placeholder: "Заметка" },
             domProps: { value: _vm.form.body },
             on: {
               input: function($event) {
@@ -38641,7 +38637,7 @@ var render = function() {
           [
             _vm.loading
               ? _c("div", { attrs: { "uk-spinner": "" } })
-              : _c("span", [_vm._v("Опубликовать")])
+              : _c("span", [_vm._v("Создать")])
           ]
         )
       ])
@@ -38678,7 +38674,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [_c("h1", [_vm._v("Добро пожаловать!")])])
+    return _c("div", [_c("h1", [_vm._v("Home")])])
   }
 ]
 render._withStripped = true

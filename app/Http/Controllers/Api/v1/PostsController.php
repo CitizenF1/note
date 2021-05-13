@@ -3,9 +3,7 @@
 namespace App\Http\Controllers\Api\v1;
 
 use App\Http\Controllers\Controller;
-use App\Models\Post;
 use Illuminate\Http\Request;
-use Validator;
 
 class PostsController extends Controller
 {
@@ -33,6 +31,7 @@ class PostsController extends Controller
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
      * @return array
      */
     public function store(Request $request)
@@ -62,6 +61,7 @@ class PostsController extends Controller
             "post" => $post
         ];
 
+    
     }
 
     /**

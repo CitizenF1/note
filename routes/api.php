@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Api\v1\NotesController;
+use App\Http\Controllers\Api\v1\PostsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +19,4 @@ use App\Http\Controllers\Api\v1\NotesController;
 //    return $request->user();
 //});
 
-Route::resource('notes', NotesController::class);
+Route::resource('posts', PostsController::class);

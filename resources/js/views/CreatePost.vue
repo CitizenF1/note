@@ -7,19 +7,19 @@
         <form style="margin-bottom: 20px;">
             <fieldset class="uk-fieldset">
 
-                <legend class="uk-legend">Опубликовать пост</legend>
+                
 
                 <div class="uk-margin">
                     <input class="uk-input" v-model="form.title" type="text" placeholder="Заголовок">
                 </div>
 
                 <div class="uk-margin">
-                    <textarea class="uk-textarea" v-model="form.body" rows="5" placeholder="Содержимое"></textarea>
+                    <textarea class="uk-textarea" v-model="form.body" rows="5" placeholder="Заметка"></textarea>
                 </div>
 
                 <button class="uk-button uk-button-primary" @click.prevent="store">
                     <div uk-spinner v-if="loading"></div>
-                    <span v-else>Опубликовать</span>
+                    <span v-else>Создать</span>
                 </button>
             </fieldset>
 
